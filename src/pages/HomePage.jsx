@@ -115,8 +115,30 @@ const PostThumbnail = styled.img`
 `;
 
 const PostDate = styled.p`
+  width: 100%;
+  font-size: 10px;
   color: gray;
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
 `
+const PostBottom = styled.div`
+  border-top: 1px solid var(--border4);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+`;
+
+const PostBottom_Left = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const PostBottom_Right = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
 function Navbar() {
   return (
@@ -160,6 +182,10 @@ function HomePage() {
             <h2>{post.title}</h2>
             <p>{post.content}</p>
             <PostDate>{post.createdAt}</PostDate>
+            <PostBottom>
+              <PostBottom_Left>by 수용</PostBottom_Left>
+              <PostBottom_Right>100</PostBottom_Right>
+            </PostBottom>
           </PostCard>
         ))}
       </PostCardContainer>
