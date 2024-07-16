@@ -15,7 +15,8 @@ const Header_Left = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: 700px;
 `;
 
 const Header_Right = styled.div`
