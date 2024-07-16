@@ -75,7 +75,6 @@ const TextContent = styled.p`
 function PostDetailPage() {
   const { postID } = useParams();
   const post = dummy_data.find((post) => post.postID === parseInt(postID));
-
   return (
     <Container>
       <Title>[{post.title}]  {post.content}</Title>

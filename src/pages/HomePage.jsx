@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { dummy_data } from "../data/dummy_data";
-import styled from "styled-components";
-
 import { MdOutlineTrendingUp, MdRssFeed, MdArrowDropDown } from "react-icons/md";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import { LuClock4 } from "react-icons/lu";
+
+import styled from "styled-components";
 
 const NavbarWrapper = styled.div`
   padding: 30px 5px;
